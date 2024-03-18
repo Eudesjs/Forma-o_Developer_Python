@@ -66,14 +66,14 @@ sequencia. Retorna Verdadeiro ou Falso (true , false)
 emial = 'eudsjs@gmail.com'
 print('u' not in email)
 
-# METODO CAPITALIZE CONVERTE UM MAIUSCULA APENAS A PRIMEIRA LETRA DE
+# METODO CAPITALIZE() CONVERTE UM MAIUSCULA APENAS A PRIMEIRA LETRA DE
 # DE UMA STRING.
 nome = 'eudes'
 print(nome)
 nome = nome.capitalize()
 print(nome)
 
-# METODO TITLE, SERVE PARA DEIXAR A PRIMEIRA LETRA DE CADA PALAVRA
+# METODO TITLE(), SERVE PARA DEIXAR A PRIMEIRA LETRA DE CADA PALAVRA
 # MAIUSCULA
 nome = 'eudes jose da silva'
 print(nome)
@@ -81,3 +81,66 @@ nome = nome.capitaliza() # Deixar a primeira letra do primeiro nome Maiuscula
 print(nome)
 nome = nome.title() #deixa a primeira letra de todas as palavras maiuscula
 print(nome)
+
+# METODO UPPER() DEIXA TODAS AS LETRAS MAIUSCULAS
+nome = 'eudes josé da silva'
+print(nome)
+nome = nome.upper()
+print(nome)
+
+# METODO COUNT() CONTA QUANTAS VEZES UM DETERMINADO CARACTER APARECE EM UMA 
+# STRING.
+email = 'eudsjs@gmail.com'
+email.count('@')
+
+# METODO FIND() MOSTRA A POSIÇÃO DE UM DETERMINADO CARACTERES
+# CASO APAREÇA MAIS DE UMA VEZ, ELE POR PADRÃO MOSTRARÁ A PRIMEIRA
+email = 'eudsjs@gmail.com'
+email.find('u') # retorna true ou false
+
+# METODO STARTSWITH() VERIFICA SE UMA STRING COMEÇA COM UM DETERMINADO
+# CARACTER OU SEQUENCIA DE CARACTERES
+email = 'eudsjs@gmail.com'
+email.startswith('eud') #retorna true ou false
+
+# METODO ENDSWITH() VERIFICA SE UMA STRING TERMINA COM UM DETERMINADO
+# CARACTER OU SEQUENCIA DE CARACTERES
+email = 'eudsjs@gmail.com'
+email.endswith('.com')
+
+# METODO ISNUMERIC() VERIFICA SE O CONTEUDO DE UMA STRING É OU NAO NUMERICO
+cpf = '04378132400'
+cpf.isnumeric()
+
+# METODO ISALPHA() VERIFICA SE O CONTEUDO DE UMA STRING É OU NAO LETRAS
+nome = 'Eudes Silva'
+nome.isalpha()
+
+# METODO ISALNUM() VERIFICA SE O CONTEUDO DE UMA STRING É OU NAO COMBINAÇÃO
+# DE LETRAS E NUMEROS.
+nome = 'Eudes'
+nome.isalnum()
+
+# METODO STRIP() REMOVE ESPAÇOS INDESEJADOS NO COMEÇO E/OU FINAL DA STRING
+nome = ' Eudes'
+print(len(nome))
+nome = nome.strip()
+print(len(nome))
+
+# METODO REPLACE SUBSTITUI UM CARACTER POR OUTRO.
+preco = 'R$ 10.50'
+preco = preco.replace('.' , ',')
+print(preco)
+
+# METODO SPLIT() DIVIDE UMA STRING EM DUAS OU MAIS PARTES POR MEIO
+# DE UM SEPARADOR
+nome = 'Eudes José da Silva'
+nome = nome.split()
+print(nome)
+
+date = '12/05/2023'
+dia_mes_ano = date.split('/')
+print(dia_mes_ano)
+
+
+
