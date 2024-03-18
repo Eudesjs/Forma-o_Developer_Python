@@ -75,7 +75,7 @@ print(nome)
 
 # METODO TITLE, SERVE PARA DEIXAR A PRIMEIRA LETRA DE CADA PALAVRA
 # MAIUSCULA
-nome = eudes jose da silva
+nome = 'eudes jose da silva'
 print(nome)
 nome = nome.capitaliza() # Deixar a primeira letra do primeiro nome Maiuscula
 print(nome)
